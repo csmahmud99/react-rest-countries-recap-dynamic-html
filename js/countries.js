@@ -8,7 +8,7 @@ const loadCountries = () => {
 
 // Display the loaded data on the project UI
 const displayCountries = countries => {
-    console.log(countries);
+    // console.log(countries);
     const AllCountriesHTML = countries.map(country => getCountryHTML(country));
 
     // console.log(AllCountriesHTML);
@@ -22,7 +22,7 @@ const displayCountries = countries => {
 
 const getCountryHTML = country => {
     return `
-        <div>
+        <div class="country">
             <h2>${country.name.common}</h2>
             <img src = ${country.flags.png} alt = "country-flags" />
         </div>
